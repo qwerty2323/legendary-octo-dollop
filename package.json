@@ -1,0 +1,26 @@
+{
+    "name": "osmtogeojson",
+    "version": "1.0.0",
+    "description": "code challenge",
+    "scripts": {
+        "build": "babel index.js src -d dist",
+        "start": "npm run build && node dist/index.js",
+        "test": "mocha tests/ --require @babel/register"
+    },
+    "repository": "github.com/qwerty2323/legendary-octo-dollop",
+    "author": "Ivan Shelomentsev",
+    "license": "MIT",
+    "dependencies": {
+        "@babel/cli": "^7.0.0",
+        "@babel/core": "^7.0.0",
+        "@babel/node": "^7.12.10",
+        "@babel/register": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "axios": "^0.21.0",
+        "body-parser": "1.19.0",
+        "express": "^4.0.0",
+        "mocha": "^8.2.1",
+        "osmtogeojson": "^2.2.12",
+        "q": "1.5.1"
+    }
+}
